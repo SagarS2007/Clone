@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Assistant';
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    background-color: white;
+    z-index: 100;
+    padding: 10px 20px;
+    box-shadow: 1px 2px 9px black;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header a h2 {
+    position: relative;
+    right: 260%;
+    margin: 0;
+    justify-self: center;
+}
+header::-webkit-scrollbar{
+    background-color: #f2eeed;
+    width: 100%;
+}
+
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    margin-right:22px ; 
+}
+
+.menu-list li {
+    margin-right: 20px;
+}
+
+.menu-icon {
+    display: flex;
+    list-style: none;
+}
+
+
+.menu-icon li {
+    margin-left: 20px;
+}
+
+/* Style the SVG icons inside the menu */
+.menu-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    margin-right: 5px; 
+}
+.banner{
+    background-image: url(https://nack.life/cdn/shop/files/Yoga_Day_Journal_Desktop_1280x.jpg?v=1689658304);
+    width: 100%;
+height: 400px;
+background-size: 100% 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+color: whitesmoke;
+box-shadow: 1px 2px 9px black;
+animation: slide 5s linear infinite ;
+}
+@keyframes slide {
+    0%{
+        background-image: url(https://nack.life/cdn/shop/files/Carousel_Web_Banner_img-01_1280x.jpg?v=1684483241 );
+    }
+    50%{
+        background-image: url(https://nack.life/cdn/shop/files/Yoga_Day_Journal_Desktop_1280x.jpg?v=1689658304);
+    }
+    100%{
+        background-image: url(https://nack.life/cdn/shop/files/desktopbanner_1280x.jpg?v=1692342864 );
+    }
+
+
+    
+}
+.banner p{
+    margin-top: 24px;
+}
+#btn{
+    margin-top: 24px;
+    height: 45px;
+    width: 155px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: 6ms ease-in-out;
+}
+#btn:hover{
+    color: rgb(239, 185, 120);
+    background-color: rgb(32, 31, 31);
+}
+.message{
+    margin-top: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 52px;
+}
+.message h1{
+    margin-top: 22px;
+    font-weight: 500;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    /* margin-left: 22px;
+    margin-right: 22px; */
+    
+   
+}
+
+.temp{
+    width: 100%;
+ position: absolute;
+ transition: 1s;
+}
+.temp a img{
+    width: 100%;
+    object-fit: scale-down;
+    position: relative;
+}
+.temp h4{
+    z-index: 101;
+    position: absolute;
+    left: 45%;
+    bottom: 35%;
+    align-items: baseline;
+}
+.about{
+    margin-top: 123px;
+}
+
+.eaaElectrolytes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1140px;
+    height: 730px;
+}
+.left{
+    width: 475px;
+    height: 290.6px;
+}
+.left h1{
+    font-weight: 500;
+}
+
+#btn-readmore{
+    margin-top: 45px;
+    height: 45px;
+    width: 167px;
+    background-color: #face93;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 10ms ease-in-out;
+}
+#btn-readmore:hover{
+    background-color: black;
+    color: #face93 ;
+}
+.sec2{
+    width: 1240px;
+    height: 730px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 152px;
+}
+.wheyprotein{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    width: 1140px;
+    height: 730px;
+}
+.left2{
+    width: 665px;
+    height: 730px;
+}
+.right2{
+width: 475px;
+height: 290.6px;
+}
+.right2 h1 {
+margin-top: 22px;
+margin-bottom: 22px;
+font-weight: 500;
+}
+#img2{
+    width: 560px;
+    height: 730px;
+}
+.sec3{
+    width: 1240px;
+    height: 730px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 152px;
+}
+.plantprotien{
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    width: 1000px;
+    height: 730px;
+}
+.left3{
+    width: 490px;
+    height: 472.19px;
+    background: #f2eeed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right3{
+    margin-left: 102px;
+}
+.right3 img{
+    width: 487px;
+    height: 730px;
+}
+
+.data3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ width: 356.5px;
+ height: 323.69px;
+
+}
+.data3 h6{
+  font-weight: 700; 
+}
+.data3 h1{
+    font-weight: 500;
+}
+.sec4{
+    width: 1240px;
+    height: 730px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 152px;
+}
+.imunityboost{
+    width: 1140px;
+    height: 730px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left4{
+    width: 665px;
+    height: 730px;
+}
+.left4 img{
+    width: 560px;
+    height: 730px;
+}
+.right4{
+    width: 475px;
+    height: 244.21px;
+}
+.right4 h6{
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+.right4 h1{
+    font-weight: 500;
+    margin-bottom: 22px;
+
+}
+.sec5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 545.45px;
+    background-color: #faf2e9;
+    margin-top: 89px;
+}
+.healthcoaches{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1140px;
+    height: 545.45px;
+}
+.left5{
+    width: 440px;
+    height: 225.29px;
+}
+.right5 img{
+    margin-top: 3px;
+width: 549.99px;
+height: 545.45px;
+}
+.left5 h6{
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+.left5 h1{
+    font-weight: 500;
+    margin-bottom: 22px;
+
+}
+.pursuit{
+   width:1240px; 
+   height: 308.56px;
+   margin-top: 6px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.pur-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:1100px; 
+   height: 308.56px; 
+  
+}
+.pur-data h1{
+    font-weight: 500;
+    font-size: 42px;
+    margin-bottom: 23px;
+}
+.pur-data div{
+    font-size: 18px;
+    margin-bottom: 21px;
+}
+.pur-data a{
+    font-weight: 700;
+  text-decoration: none;
+    color: black;
+}
+.pur-data a:hover{
+    color: #fbce92;
+}
+.journal{
+    width: 100%;
+    height: 733.52px;
+    background: #efe3d4;
+
+}
+ .headinggg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.headinggg h2{
+    margin-top: 56px;
+    margin-bottom: 56px;
+    font-weight: 600;
+}
+.journal-images{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.mini-links{
+    display: flex;
+   
+}
+.mini-links a{
+    margin-left: 4px;
+    color: black;
+    font-size: 13px;
+}
+.mini-links a:hover{
+    color:#fdd6a8 ;
+}
+#j-img1{
+    width: 349.33px;
+    height: 300.48px;
+}
+#j-img2{
+    width: 349.33px;
+    height: 300.48px;
+}
+#j-img3{
+    width: 349.33px;
+    height: 300.48px;
+}
+.redd{
+   
+    font-weight: 700;
+    color: black;
+    text-decoration: underline orangered;
+}
+.redd:hover{
+color:#fdd6a8 ;
+}
+.bottom{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 19px;
+}
+.top{
+    display: flex;
+}
+hr{
+    height: 1px;
+    background-color:rgb(32, 30, 30);
+    border: none;
+}
+.sec11{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sec11 a{
+    text-decoration: none;
+    color: white;
+}
+.sec11 ul{
+    display: flex;
+    gap: 12px;
+}
+.sec11 li{
+    list-style: none;
+   
+}.sec22{
+display: flex;
+justify-content: center;
+align-items: center;
+/* flex-direction: column; */
+width: 642.74px;
+margin-top: 72px;
+
+}
+
+.sec22 ul li{
+    list-style: none;
+}
+.sec22 ul li a{
+    color: white;
+    text-decoration: underline white;
+}
+.sec33{
+    width: 500.74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+}
+#hcpts{
+    display: flex;
+    padding: 4px;
+}
+
+
+#imp-em{
+    background-color: black;
+    border: none;
+    outline: 1px solid white;
+}
+#imp-em::placeholder{
+text-align:center ;
+
+}
+#hcpts li a{
+    margin-left: 12px;
+    margin-right: 9px;
+}
+#abht {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 465px;
+margin-left: -47px;
+margin-top: 20px;
+
+
+}
+#abht li a{
+  
+    padding-right: 12px;
+}
+#joinnow{
+    height: 50px;
+    width: 351.68px;
+     margin-top: 8px;
+     background-color: #fbce92;
+      color: black; 
+      border: none; 
+      border-radius: 2px;
+      
+}
+.whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    background-color: black;
+   color: white;
+    position: fixed;
+    left: 1211px;
+    right: 55px;
+    top: 477px;
+   z-index: 100;
+   border-radius: 50%;
+   box-shadow: 0px 0px 10px rgb(28, 94, 236);
+}
+#Image1{
+    transition: 2s ease-in-out;
+}
+#Image1:hover{
+
+    height: 239.65px;
+}
+
+.nav44{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+#previ{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+position: absolute;
+left: 10%;
+bottom: 200px; 
+color: #faf2e9;
+background-color: black;
+box-shadow: 2px 4px 10px black;
+}
+#previ svg{
+height: 50px;
+width: 50px;
+}
+#nextt{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    border: none;
+    border-radius: 50%;
+position: absolute;
+right: 10%;
+bottom: 200px;
+/* z-index: 100; */
+color: #faf2e9;
+background-color: black;
+box-shadow: 2px 4px 10px black;
+
+}
+#nextt svg{
+    height: 50px;
+    width: 50px;
+    }
